@@ -1,0 +1,220 @@
+/* Font-family de toda a página e remoção da margin/padding */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Cor de fundo do header, flexbox no menu e definição de padding */
+header {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px 0 150px;
+}
+
+    /* Remoção de estilos nos links e nas listas do header, além de tirar margens dos bullet points */
+    header a, header ul, header li {
+        text-decoration: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+    }
+
+    /* Tamanho e cor da fonte no logo */
+    .logo a {
+        font-size: 24px;
+        color: #F9FAF8;
+    }
+
+    /* Tamanho e cor da fonte na barra de navegação */
+    .barra-de-navegação a {
+        font-size: 18px;
+        color: #E5E7EB;
+    }
+
+
+/* Background-color do hero e definição de padding de acordo com o padrão da página */
+.hero {
+    background-color: #1F2937;
+    display: flex;
+    padding: 150px;
+    height: 500px;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+
+    /* Flexbox do H1, parágrafo e botão no container */
+    .hero .text-button {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        width: 100%;
+    }
+
+        /* Características do H1 */
+        h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #F9FAF8;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 15px;
+        }
+
+        /* Características do texto abaixo do H1 */
+        .hero p {
+            font-size: 18px;
+            color: #E5E7EB;
+            margin: 0;
+            padding-bottom: 15px;
+        }
+
+        /* Características do botão do Hero */
+        .hero button {
+            background-color: #3882F6;
+            color: #F9FAF8;
+            padding: 5px 25px 5px 25px;
+            border: none; /* Remove o estilo padrão que existe em botões */
+            border-radius: 5px; /* Bordas arredondadas no botão */
+            width: 150px;
+            height: 35px;
+            font-size: 18px;
+        }
+
+    /* Características da imagem do Hero */
+    .hero img{
+        display: flex;
+        flex: 1;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.principais-carros {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 150px;
+    flex-wrap: wrap;
+}
+
+    .carrossel-carros {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .carrossel-carros img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+        border: 3px #3882F6 solid;
+    }
+
+    .carrossel-carros p {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 15px;
+    }
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .quote blockquote {
+        font-size: 36px;
+        font-style: italic;
+        font-weight: light;
+        color: #1F2937;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 600px;
+    }
+
+    .quote p {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        width: 600px;
+    }
+
+.cta {
+    display:flex;
+    margin: 150px;
+    background-color: #3882F6;
+    padding: 50px 100px 50px 100px;
+    border-radius: 10px;
+    justify-content: center;  
+    align-items: center;
+    gap: 30px;
+}
+
+    .cta h3{
+        margin: 0;
+        padding: 0;
+        color: #F9FAF8;
+        font-weight: 900;
+    }
+
+    .cta p{
+        margin: 0;
+        padding: 0;
+        color: #F9FAF8
+    }
+
+    .cta-texto {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 1000px;
+    }
+
+    .cta button {
+        background-color: #3882F6;
+        border-style: none;
+        border: 1px #F9FAF8 solid;
+        color: #F9FAF8;
+        font-size: 18px;
+        width: 150px;
+        height: 35px;
+        border-radius: 5px;
+        padding: 5px 25px 5px 25px;
+    }
+
+footer {
+    background-color: #1F2937;
+    padding: 20px 150px 20px 150px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+    footer p {
+        color:#F9FAF8;
+    }
